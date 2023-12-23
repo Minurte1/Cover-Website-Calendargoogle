@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-lich">
+        <div class="wrap">
+            <div class="container-lichNavbar">
+                <div class="container-lichNavbarLeft">
+                    <div class="container-lichNavbar_bar" title="Trình đơn chính">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </div>
+                    <div class="container-lichNavbar_logo">
+
+                        <img src="calendar_23_2x.png" alt="" class="container-lichNavbar_logoIMG">
+
+                    </div>
+                    <span class="container-lichNavbarLeft_span">Lịch</span>
+                </div>
+                <div class="container-lichNavbarRight">
+                    <div class="container-lichNavbarRight_1">
+                        <div class="container-lichNavbar_today">
+                            <Button>
+                                Hôm nay
+                            </Button>
+                        </div>
+                        <span class="container-lichNavbarRight_1span"><button class=" container-lichNavbar_left"><i
+                                    class="fa-solid fa-chevron-left"></i></button></span>
+                        <span class="container-lichNavbarRight_1span"> <button class="container-lichNavbar_right"><i
+                                    class="fa-solid fa-chevron-right"></i></button></span>
+
+
+                        <div class="container-lichNavbar_date">
+                            <div class="container-lichNavbar_dateNow">
+                                Ngày 1.1.2023
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- aaa -->
+
+                    <div class="container-lichNavbarRight_2">
+
+                    </div>
+                    <div class="container-lichNavbarRight_3">
+                        <div class="container-lichNavbar_search container-lichNavbarRight_3magin container-lichNavbarRight_3hover"
+                            onclick="ShowSearch()" title="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <div class="container-lichNavbar_question container-lichNavbarRight_3magin container-lichNavbarRight_3hover"
+                            title="Hỗ trợ"> <i class="fa-regular fa-circle-question"></i></div>
+
+                        <div
+                            class="container-lichNavbar_setting container-lichNavbarRight_3magin container-lichNavbarRight_3hover">
+                            <i class="fa-solid fa-gear" title="Menu cài đặt"></i>
+                        </div>
+                        <div class="container-lichNavbar_optionday container-lichNavbarRight_3magin"><span>Tuần</span>
+                        </div>
+                        <div class="container-lichNavbar_calendar container-lichNavbarRight_3magin"> <i
+                                class="fa-regular fa-calendar-minus"></i></div>
+                        <div class="container-lichNavbar_task container-lichNavbarRight_3magin"><i
+                                class="fa-thin fa-circle-check"></i></div>
+                    </div>
+
+                </div>
+
+                <div class="container-lichNavbar_optionOther"> <i class="fa-solid fa-bars"></i></div>
+                <div class="container-lichNavbar_Avtar">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            <div class="container-lichbody">
+                <div class="container-lichbody_1">
+                    <div class="container-lichbody_1_create">
+                        <div class="container-lichbody_1_createChild">
+                            <p>Tạo</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+
+                    </div>
+                    <div class="container-lichbody_1_CalendaMini">
+                        <div class="container-lichbody_1_CalendaMini-Top">
+                            <span style="font-size: 20px;">Tháng 1, 2024</span>
+                            <span class="container-lichbody_1_CalendaMini-Top_theI"><i
+                                    class="fa-solid fa-chevron-left ress"></i></span>
+                            <span
+                                class="container-lichbody_1_CalendaMini-Top_theII container-lichbody_1_CalendaMini-Top_theI"><i
+                                    class="fa-solid fa-chevron-right ress"></i></span>
+
+
+                        </div>
+                        <div class="container-lichbody_1_CalendaMini-Bot">
+
+                        </div>
+
+                    </div>
+                    <div class="container-lichbody_1_searchPP">
+                        <div class="container-lichbody_1_searchPP__">
+                            <i class="fa-solid fa-users container-lichbody_1_searchPP__users"></i>
+                            <p class="container-lichbody_1_searchPP__userstext">Tìm người</p>
+                            <input type="text" class="container-lichbody_1_searchPP__input">
+                        </div>
+                    </div>
+                    <div class="container-lichbody_1_MyCalendar">
+                        <div class="container-lichbody_1_MyCalendar_Top">
+                            <span class="container-lichbody_1_MyCalendar_TopSpan">Lịch của tôi</span>
+                            <div class="container-lichbody_1_MyCalendar_Top_Icon"> <i
+                                    class="fa-solid fa-chevron-up container-lichbody_1_MyCalendar_TopIcon"></i>
+                                <i class="fa-solid fa-chevron-down container-lichbody_1_MyCalendar_TopIcon"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container-lichbody_1_MyCalendar">
+                        <div class="container-lichbody_1_MyCalendar_Top">
+                            <span class="container-lichbody_1_MyCalendar_TopSpan">Lịch Khác</span>
+                            <i class="fa-solid fa-plus" title="Thêm các lịch khác"></i>
+                            <div class="container-lichbody_1_MyCalendar_Top_Icon">
+                                <i class="fa-solid fa-chevron-up container-lichbody_1_MyCalendar_TopIcon"></i>
+                                <i class="fa-solid fa-chevron-down container-lichbody_1_MyCalendar_TopIcon"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-lichbody_2">
+                    <div class="container-lichbody_2_Top">
+
+                    </div>
+                    <div class="container-lichbody_2_Bot">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
