@@ -289,7 +289,7 @@
     width: 100%;
     height: auto;
     /* justify-content: center; */
-    margin-left: 4%;
+    margin-left: 6%;
     display: flex;
 
 }
@@ -305,15 +305,18 @@
     width: 20px;
     height: 20px;
     background-color: white;
-    margin-left: 10px;
+    margin-left: 20px;
+    font-size: 17px;
 
 
 }
 
 .container-lichbody_1_CalendaMini-Bot {
-    border: 1px solid #333;
+    margin-left: 10px;
     height: 100%;
     width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .ress {
@@ -451,4 +454,27 @@
     background-color: #f0f0f0;
     border-radius: 50%;
     z-index: 20;
+}
+
+.container-lichbody_1_CalendaMini-Bot {
+    display: flex;
+    flex-direction: row;
+    /* Hiển thị theo hướng dòng */
+    flex-wrap: wrap;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    /* Điều chỉnh khoảng cách giữa các bảng (tuỳ chọn) */
+}
+
+.table-cell {
+    padding: 5px;
+    text-align: center;
+}
+
+.table-cell:hover {
+    cursor: pointer;
 }
