@@ -272,7 +272,7 @@
 .container-lichbody_2 {
     width: 80%;
     height: 800px;
-    border: 1px solid black;
+
 
 
 }
@@ -381,13 +381,27 @@
     margin-left: 2%;
 }
 
+.test {
+    width: 3%;
+    height: 100%;
+
+}
+
 .container-lichbody_2_Top {
+    width: 100%;
+    height: 110px;
+    display: flex;
+}
+
+.container-lichbody_2_Topp {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     /* Ưu tiên chiều rộng tối thiểu 200px, chia đều cột */
     gap: 20px;
     /* Khoảng cách giữa các cột */
     text-align: center;
+    width: 97%;
+    height: 100%;
 }
 
 .container-lichbody_2_Top_h2 {
@@ -448,10 +462,25 @@
 }
 
 .container-lichbody_2_Bot {
-    width: 100%;
+    width: 99%;
     height: 720px;
-
+    display: flex;
 }
+
+.container-lichbody_2_Bot_1 {
+    width: 3%;
+    height: 100%;
+
+    margin-top: -10px;
+}
+
+.container-lichbody_2_Bot_2 {
+    width: 97%;
+    height: 100%;
+
+    display: flex;
+}
+
 
 .container-lichbody_1_MyCalendar_TopIcon {
 
@@ -499,4 +528,56 @@
 
 .table-cell:hover {
     cursor: pointer;
+}
+
+
+/* ..................................... */
+.container-lichbody_2_Bot_1___ {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+}
+
+.container-lichbody_2_Bot_1___11div {
+    width: 100%;
+    height: 54px;
+    text-align: center;
+}
+
+/* ------------------------------------ */
+.container-lichbody_2_Top_h2Bot__1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container-lichbody_2_Bot_1___ne {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+
+
+}
+
+
+.row {
+    border: 1px solid black;
+}
+
+.container-lichbody_2_Bot_1___11divSpan {
+    font-size: 13px;
+    color: #333;
+    opacity: 0.7;
+    width: auto;
+    height: auto;
+
+
+}
+
+.row1 {
+    width: 100%;
+    height: 55.6px;
+    text-align: center;
+    z-index: 4;
 }
