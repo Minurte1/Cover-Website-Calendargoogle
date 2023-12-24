@@ -277,6 +277,8 @@
 
 }
 
+
+
 .container-lichbody_1_CalendaMini {
 
     /* margin-left: 4%; */
@@ -380,12 +382,32 @@
 }
 
 .container-lichbody_2_Top {
-    width: 100%;
-    height: 80px;
-    border: 1px solid black;
-
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Ưu tiên chiều rộng tối thiểu 200px, chia đều cột */
+    gap: 20px;
+    /* Khoảng cách giữa các cột */
+    text-align: center;
 }
+
+.container-lichbody_2_Top_h2 {
+
+    /* Màu nền cho h2 */
+
+    /* Viền xung quanh h2 */
+    border-radius: 5px;
+    /* Bo tròn góc h2 */
+    overflow: hidden;
+    /* Ẩn nội dung vượt ra khỏi h2 */
+}
+
+.container-lichbody_2_Top_h2Top,
+.container-lichbody_2_Top_h2Bot {
+    padding: 10px;
+    /* Padding bên trong h2Top và h2Bot */
+}
+
+/* Tùy chỉnh màu sắc và giao diện cho các phần tử khác nếu cần */
 
 .container-lichbody_1_MyCalendar_Top {
     display: flex;
@@ -428,7 +450,7 @@
 .container-lichbody_2_Bot {
     width: 100%;
     height: 720px;
-    border: 1px solid black;
+
 }
 
 .container-lichbody_1_MyCalendar_TopIcon {
